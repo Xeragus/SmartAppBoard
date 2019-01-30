@@ -1,2 +1,2 @@
 # SmartAppBoard
-Interactive project management board built with React and Spring
+Spring API for the project "Interactive Project Management Board"
