@@ -27,4 +27,9 @@ public class AppTaskService {
     public AppTask getAppTaskById(Long id) {
         return appTaskRepository.getById(id);
     }
+
+    public void delete(Long id) {
+        AppTask appTask = getAppTaskById(id);
+        appTaskRepository.delete(appTask);
+    }
 }

@@ -47,6 +47,14 @@ public class AppTaskController {
     @GetMapping("/app-tasks/{id}")
     public ResponseEntity<?> getAppTaskById(@PathVariable Long id) {
         AppTask appTask = appTaskService.getAppTaskById(id);
+
         return new ResponseEntity<AppTask>(appTask, HttpStatus.OK);
+    }
+
+    @DeleteMapping("/app-tasks/{id}")
+    public ResponseEntity<?> deleteAppTaskById(@PathVariable Long id) {
+        appTaskService.delete(id);
+
+        return new ResponseEntity<String>("Project task deleted", HttpStatus.OK);
     }
 }
