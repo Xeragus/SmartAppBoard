@@ -1,2 +1,2 @@
 # SmartAppBoard
-Spring API for the project "Interactive Project Management Board"
+Spring API for the Interactive Project Management Board
